@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Amjad Rahman</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div>
+      <div class="name">Amjad Rahman</div>
+      <div class="role">Digital Creator</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section hero reveal">
+  <div class="badge"><span class="dot"></span> Available</div>
+
+  <h1 class="hero-title">Amjad<br>Rahman</h1>
+
+  <div class="hero-role">
+    <span class="line"></span>
+    WEB DESIGNER & DEVELOPER
+    <span class="line"></span>
+  </div>
+
+  <p class="hero-text">
+    Creating beautiful, functional digital experiences that connect brands with their audience.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="btn primary" onclick="window.location.href='mailto:itsamjadrahman@gmail.com'">Email Me <i data-lucide="mail"></i></button>
+    <button class="btn outline">View Resume <i data-lucide="file-text"></i></button>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <div class="section-header">
+    <span class="section-line"></span>
+    <h2>ABOUT <span>/ PROFILE</span></h2>
+  </div>
+
+  <div class="about-grid">
+    <div>
+      <h3 class="big-heading">DIGITAL<br>CREATOR</h3>
+      <p class="about-text">
+        I orchestrate seamless digital experiences where precision engineering meets intuitive design.
+        Every pixel, every line of code, serves a purpose.
+      </p>
+
+      <div class="manifesto">
+        <b>MANIFESTO</b>
+        <p>In a world of noise, I build clarity.</p>
+      </div>
+
+      <div class="tag-row">
+        <span>Web</span><span>Cloud</span><span>Designing</span><span>Hacking</span><span>Graphics</span>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-badge">AVAILABLE</div>
+      <div class="profile-circle">
+        <img src="profile.jpg" alt="Profile">
+      </div>
+      <h3>AMJAD RAHMAN</h3>
+      <div class="profile-role">
+        <span></span> DIGITAL CREATOR <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-header">
+    <span class="section-line"></span>
+    <h2>PROFICIENCIES <span>/ BUILD STACK</span></h2>
+  </div>
+
+  <div class="stack-grid">
+    <span>JavaScript</span><span>HTML</span><span>CSS</span>
+    <span>Tailwind</span><span>Astro</span><span>VS Code</span>
+    <span>Vercel</span><span>GitHub</span><span>Netlify</span>
+    <span>Render</span><span>Cloudflare</span><span>Photoshop</span>
+    <span>Canva</span><span>Illustrator</span><span>Affinity</span>
+  </div>
+</section>
+
+<section id="projects" class="section reveal">
+  <div class="section-header">
+    <span class="section-line"></span>
+    <h2>PROJECTS <span>/ FEATURED WORK</span></h2>
+  </div>
+
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Websites</button>
+    <button class="filter-btn" data-filter="tool">Tools</button>
+    <button class="filter-btn" data-filter="graphics">Graphics</button>
+  </div>
+
+  <div class="project-grid">
+    <div class="card project-card" data-category="web">
+      <div class="card-badge">WEB</div>
+      <img src="project1.jpg" class="project-img">
+      <h4>Falastech</h4>
+      <p>A simple and responsive website for FalasTech</p>
+      <div class="project-tags">
+        <span>HTML</span><span>JavaScript</span><span>+1</span>
+      </div>
+      <div class="project-actions">
+        <button class="btn-project primary" onclick="window.location.href='https://github.com/FalasTech'"><i data-lucide="github"></i> Code</button>
+        <button class="btn-project outline" onclick="window.location.href='https://falastech.org'"><i data-lucide="external-link"></i> Live</button>
+      </div>
+    </div>
+
+    <div class="card project-card" data-category="tool">
+      <div class="card-badge purple">TOOL</div>
+      <img src="project2.jpg" class="project-img">
+      <h4>Palestine Profile Maker</h4>
+      <p>A tool that helps you to add Palestinian th3med borders to your profile photos.</p>
+      <div class="project-tags">
+        <span>HTML</span><span>JavaScript</span><span>+2</span>
+      </div>
+      <div class="project-actions">
+        <button class="btn-project primary" onclick="window.location.href='https://github.com/FalasTech/falastech-ppm'"><i data-lucide="github"></i> Code</button>
+        <button class="btn-project outline" onclick="window.location.href='https://ppm.falastech.org'"><i data-lucide="eye"></i> View</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section reveal">
+  <div class="section-header">
+    <span class="section-line"></span>
+    <h2>EXPERIENCE <span>/ WORK & IMPACT</span></h2>
+  </div>
+
+  <div class="experience-timeline">
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="exp-title-row">
+          <h3>FalasTech</h3>
+          <span class="exp-date">Apr 2025 – Present</span>
+        </div>
+        <div class="exp-subtitle-row">
+          <span class="exp-role">Founder</span>
+          <span class="exp-location">Remote</span>
+        </div>
+      </div>
+      <p class="exp-description">
+        FalasTech is a global grassroots collective of developers, designers, and digital activists committed to building free and open-source tools that support Palestinian liberation, digital advocacy, and justice-centered tech projects
+      </p>
+      <ul class="exp-bullets">
+        <li>Created PPM</li>
+        <li>Developed Website</li>
+      </ul>
+      <div class="exp-tags">
+        <span>Website</span><span>Tools</span>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="exp-title-row">
+          <h3>Flaming Poster</h3>
+          <span class="exp-date">Oct 2022 – Present</span>
+        </div>
+        <div class="exp-subtitle-row">
+          <span class="exp-role">Designer</span>
+          <span class="exp-location">KSA & India</span>
+        </div>
+      </div>
+      <p class="exp-description">
+        Managed and deployed cloud infrastructure using AWS S3, Elastic Beanstalk, CloudFormation, VPC, and IAM, 
+        ensuring secure, scalable, and automated application deployments.
+      </p>
+      <ul class="exp-bullets">
+        <li>200+ posters designed</li>
+        <li>10+ long-term clients</li>
+        <li>5+ Websites created</li>
+      </ul>
+      <div class="exp-tags">
+        <span>Photoshop</span><span>Illustrator</span><span>Affinity</span><span>Canva</span><span>VS Code</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card github-section">
+    <div class="github-header">
+      <i data-lucide="github"></i>
+      <div>
+        <h4>GitHub Activity</h4>
+        <p>@heyitzamjad</p>
+      </div>
+    </div>
+    <img class="github-heatmap" src="https://ghchart.rshah.org/heyitzamjad" alt="GitHub Contributions">
+    <div id="github-stats" class="github-stats">Loading stats...</div>
+    <a href="https://github.com/heyitzamjad" class="github-link">View full GitHub profile <i data-lucide="external-link"></i></a>
+  </div>
+</section>
+
+
+<section id="contact" class="section reveal">
+  <div class="section-header">
+    <span class="section-line"></span>
+    <h2>CONNECT <span>/ GET IN TOUCH</span></h2>
+  </div>
+
+  <div class="contact-list">
+    <div class="contact-item" onclick="window.location.href='mailto:itsamjadrahman@gmail.com?subject=Project Inquiry';" style="cursor:pointer;">
+      <div class="contact-icon gmail"><i data-lucide="mail"></i></div>
+      <div class="contact-content">
+        <h4>Email</h4>
+        <p>itsamjadrahman@gmail.com</p>
+        <span>Send message</span>
+      </div>
+      <div class="contact-arrow"><i data-lucide="chevron-right"></i></div>
+    </div>
+
+    <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/heyitzamjad','_blank');" style="cursor:pointer;">
+      <div class="contact-icon linkedin"><i data-lucide="linkedin"></i></div>
+      <div class="contact-content">
+        <h4>LinkedIn</h4>
+        <p>in/heyitzamjad</p>
+        <span>Connect</span>
+      </div>
+      <div class="contact-arrow"><i data-lucide="chevron-right"></i></div>
+    </div>
+    
+    <div class="contact-item" onclick="window.open('https://x.com/heyitzamjad','_blank');" style="cursor:pointer;">
+      <div class="contact-icon x"><i data-lucide="twitter"></i></div>
+      <div class="contact-content">
+        <h4>X (Twitter)</h4>
+        <p>@heyitzamjad</p>
+        <span>Follow</span>
+      </div>
+      <div class="contact-arrow"><i data-lucide="chevron-right"></i></div>
+    </div>
+    
+    <div class="contact-item" onclick="window.open('https://instagram.com/heyitzamjad','_blank');" style="cursor:pointer;">
+      <div class="contact-icon instagram"><i data-lucide="instagram"></i></div>
+      <div class="contact-content">
+        <h4>Instagram</h4>
+        <p>@heyitzamjad</p>
+        <span>Follow</span>
+      </div>
+      <div class="contact-arrow"><i data-lucide="chevron-right"></i></div>
+    </div>
+
+    <div class="contact-item" onclick="window.open('https://github.com/heyitzamjad','_blank');" style="cursor:pointer;">
+      <div class="contact-icon github"><i data-lucide="github"></i></div>
+      <div class="contact-content">
+        <h4>GitHub</h4>
+        <p>@heyitzamjad</p>
+        <span>View code</span>
+      </div>
+      <div class="contact-arrow"><i data-lucide="chevron-right"></i></div>
+    </div>
+  </div>
+
+  <div class="quick-card">
+    <h3>Quick Message</h3>
+    <p>Prefer to send a direct message?</p>
+    <button class="btn primary" onclick="window.location.href='mailto:itsamjadrahman@gmail.com?subject=Project Inquiry';">Send an Email <i data-lucide="send"></i></button>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 Amjad Rahman · All rights reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
