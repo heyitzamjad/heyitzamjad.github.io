@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amjad.is-a.dev/sitemap.xml
