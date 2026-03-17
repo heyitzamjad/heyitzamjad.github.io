@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -93,7 +93,7 @@
     <div class="profile-card">
       <div class="profile-badge">AVAILABLE</div>
       <div class="profile-circle">
-        <img src="profile.jpg" alt="Profile">
+        <img src="assets/images/profile.jpg" alt="Amjad Rahman">
       </div>
       <h3>AMJAD RAHMAN</h3>
       <div class="profile-role">
@@ -149,13 +149,12 @@
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="web">Websites</button>
     <button class="filter-btn" data-filter="tool">Tools</button>
-    <button class="filter-btn" data-filter="graphics">Graphics</button>
   </div>
 
   <div class="project-grid">
     <div class="card project-card" data-category="web">
       <div class="card-badge">WEB</div>
-      <img src="project1.jpg" class="project-img">
+      <img src="assets/images/project1.jpg" class="project-img">
       <h4>Falastech</h4>
       <p>A simple and responsive website for FalasTech</p>
       <div class="project-tags">
@@ -169,7 +168,7 @@
 
     <div class="card project-card" data-category="tool">
       <div class="card-badge purple">TOOL</div>
-      <img src="project2.jpg" class="project-img">
+      <img src="assets/images/project2.jpg" class="project-img">
       <h4>Palestine Profile Maker</h4>
       <p>A tool that helps you to add Palestinian themed borders to your profile photos.</p>
       <div class="project-tags">
@@ -180,6 +179,21 @@
         <button class="btn-project outline" onclick="window.location.href='https://ppm.falastech.org'"><i data-lucide="eye"></i> View</button>
       </div>
     </div>
+
+    <div class="card project-card" data-category="web">
+      <div class="card-badge">WEB</div>
+      <img src="assets/images/project3.jpg" class="project-img">
+      <h4>Foodverse Premium</h4>
+      <p>A premium and responsive website template for restaurants and food businesses.</p>
+      <div class="project-tags">
+        <span>HTML</span><span>CSS</span><span>+1</span>
+      </div>
+      <div class="project-actions">
+        <button class="btn-project primary" onclick="window.location.href='https://github.com/heyitzamjad/foodverse-premium'"><i data-lucide="github"></i> Code</button>
+        <button class="btn-project outline" onclick="window.location.href='https://amjad.is-a.dev/foodverse-premium'"><i data-lucide="external-link"></i> Live</button>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -260,11 +274,11 @@
   </div>
 
   <div class="contact-list">
-    <div class="contact-item" onclick="window.location.href='mailto:itsamjadrahman@gmail.com?subject=Project Inquiry';" style="cursor:pointer;">
+    <div class="contact-item" onclick="window.location.href='mailto:hello@amjad.is-a.dev?subject=Project Inquiry';" style="cursor:pointer;">
       <div class="contact-icon gmail"><i data-lucide="mail"></i></div>
       <div class="contact-content">
         <h4>Email</h4>
-        <p>itsamjadrahman@gmail.com</p>
+        <p>hello@amjad.is-a.dev</p>
         <span>Send message</span>
       </div>
       <div class="contact-arrow"><i data-lucide="chevron-right"></i></div>
@@ -314,7 +328,7 @@
   <div class="quick-card">
     <h3>Quick Message</h3>
     <p>Prefer to send a direct message?</p>
-    <button class="btn primary" onclick="window.location.href='mailto:itsamjadrahman@gmail.com?subject=Project Inquiry';">Send an Email <i data-lucide="send"></i></button>
+    <button class="btn primary" onclick="window.location.href='mailto:hello@amjad.is-a.dev?subject=Project Inquiry';">Send an Email <i data-lucide="send"></i></button>
   </div>
 </section>
 
@@ -322,6 +336,6 @@
   © 2026 Amjad Rahman · All rights reserved
 </footer>
 
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
