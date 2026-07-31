@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Amjad Rahman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #050816;
+      --card: #111827;
+      --accent-blue: #60A5FA;
+      --accent-purple: #8B5CF6;
+      --text: #F9FAFB;
+      --muted: #94A3B8;
+      --border: rgba(255,255,255,0.07);
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Background grid */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(96,165,250,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96,165,250,0.04) 1px, transparent 1px);
+      background-size: 44px 44px;
+      pointer-events: none;
+    }
+
+    /* Glows */
+    .glow-1, .glow-2 {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .glow-1 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(96,165,250,0.1) 0%, transparent 70%);
+      top: -150px; left: -100px;
+    }
+    .glow-2 {
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(139,92,246,0.09) 0%, transparent 70%);
+      bottom: -100px; right: -80px;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 64px;
+      display: inline-block;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+    .logo-bracket { color: var(--accent-blue); }
+
+    .error-code {
+      font-size: clamp(100px, 18vw, 160px);
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      background: linear-gradient(135deg, rgba(249,250,251,0.15) 0%, rgba(96,165,250,0.4) 50%, rgba(139,92,246,0.4) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 32px;
+      animation: flicker 6s ease-in-out infinite;
+    }
+
+    @keyframes flicker {
+      0%, 95%, 100% { opacity: 1; }
+      96% { opacity: 0.7; }
+      97% { opacity: 1; }
+      98% { opacity: 0.8; }
+    }
+
+    .title {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+
+    .description em {
+      display: block;
+      color: rgba(148,163,184,0.55);
+      font-style: normal;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+      color: white;
+      border: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(96,165,250,0.35);
+    }
+
+    .terminal-card {
+      margin-top: 48px;
+      background: #0a0f1a;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: left;
+      font-family: 'Courier New', monospace;
+    }
+
+    .terminal-header {
+      display: flex;
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+
+    .terminal-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+    }
+    .td-red    { background: #ff5f57; }
+    .td-yellow { background: #febc2e; }
+    .td-green  { background: #28c840; }
+
+    .terminal-line {
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .terminal-line .prompt { color: var(--accent-blue); }
+    .terminal-line .cmd    { color: var(--text); }
+    .terminal-line .output { color: rgba(239,68,68,0.8); }
+    .terminal-line .blink  {
+      display: inline-block;
+      width: 8px; height: 14px;
+      background: var(--accent-blue);
+      vertical-align: middle;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Entrance animation */
+    .content > * {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: rise 0.6s cubic-bezier(0.4,0,0.2,1) forwards;
+    }
+
+    .error-code { animation-delay: 0.1s; }
+    .title      { animation-delay: 0.2s; }
+    .description{ animation-delay: 0.3s; }
+    .btn        { animation-delay: 0.4s; }
+    .terminal-card { animation-delay: 0.5s; }
+    .logo       { animation: rise 0.5s cubic-bezier(0.4,0,0.2,1) 0s forwards; }
+
+    @keyframes rise {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
+
+  <div class="content">
+    <a href="/" class="logo"><span class="logo-bracket">[</span>AR<span class="logo-bracket">]</span></a>
+
+    <div class="error-code">404</div>
+
+    <h1 class="title">You found the void.</h1>
+
+    <p class="description">
+      The page either moved, was deleted,<br />
+      or became another side project.
+      <em>It happens more than I'd like to admit.</em>
+    </p>
+
+    <a href="/" class="btn">← Return Home</a>
+
+    <div class="terminal-card">
+      <div class="terminal-header">
+        <div class="terminal-dot td-red"></div>
+        <div class="terminal-dot td-yellow"></div>
+        <div class="terminal-dot td-green"></div>
+      </div>
+      <div class="terminal-line">
+        <span class="prompt">amjad@portfolio:~$</span>
+        <span class="cmd"> find / -name "missing-page"</span>
+      </div>
+      <div class="terminal-line">
+        <span class="output">find: 'missing-page': No such file or directory</span>
+      </div>
+      <div class="terminal-line">
+        <span class="prompt">amjad@portfolio:~$</span>
+        <span> </span><span class="blink"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

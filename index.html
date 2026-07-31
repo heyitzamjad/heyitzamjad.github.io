@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="yOFyNxyVqfy5G9iaw_h9lYMcYafWpLJG21bC8OcbMuc" />
+  <meta name="description" content="Amjad Rahman — Developer, designer, and creator of digital projects." />
+  
+  <!-- Primary SEO -->
+  <title>Amjad Rahman | Developer, Designer & Creator</title>
+  <meta name="title" content="Amjad Rahman | Developer, Designer & Creator">
+  <meta name="description" content="Personal portfolio of Amjad Rahman — developer, designer, and creator of digital projects. Explore projects, experiments, open-source work, and creative ideas built with HTML, CSS, JavaScript, and modern web technologies.">
+  <meta name="keywords" content="Amjad Rahman, web developer, frontend developer, portfolio, JavaScript, HTML, CSS, web designer, UI designer, GitHub, Cloudflare, open source">
+  <meta name="author" content="Amjad Rahman">
+  <meta name="creator" content="Amjad Rahman">
+  <meta name="publisher" content="Amjad Rahman">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://amjad.is-a.dev/">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0b0f19">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Amjad Rahman" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Amjad Rahman">
+  <meta property="og:title" content="Amjad Rahman | Developer, Designer & Creator">
+  <meta property="og:description" content="Developer, designer, and creator of digital projects. Explore my portfolio, experiments, open-source work, and web projects.">
+  <meta property="og:url" content="https://amjad.is-a.dev/">
+  <meta property="og:image" content="https://amjad.is-a.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Amjad Rahman Portfolio Preview">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amjad Rahman | Developer, Designer & Creator">
+  <meta name="twitter:description" content="Developer, designer, and creator of digital projects.">
+  <meta name="twitter:image" content="https://amjad.is-a.dev/assets/og-image.png">
+  <meta name="twitter:creator" content="@heyitzamjad">
+  <meta name="twitter:site" content="@heyitzamjad">
+
+  <!-- Mobile -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Amjad Rahman">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amjad Rahman",
+    "url": "https://amjad.is-a.dev/",
+    "image": "https://amjad.is-a.dev/assets/profile.jpg",
+    "jobTitle": "Web Developer",
+    "description": "Developer, designer, and creator of digital projects.",
+    "email": "mailto:info@amjad.is-a.dev",
+    "sameAs": [
+      "https://github.com/heyitzamjad",
+      "https://linkedin.com/in/heyitzamjad",
+      "https://instagram.com/heyitzamjad",
+      "https://x.com/heyitzamjad"
+    ],
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Frontend Development",
+      "Web Design",
+      "Cloudflare",
+      "Git",
+      "UI Design",
+      "Open Source"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">[</span>AR<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up" style="--delay:0.1s">
+        <span class="status-dot"></span> Available for interesting problems
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-line reveal-up" style="--delay:0.2s">I build things.</span>
+        <span class="hero-line hero-line-accent reveal-up" style="--delay:0.35s">Some survive.</span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--delay:0.5s">
+        Developer, designer, and creator of digital projects.
+      </p>
+      <div class="hero-cta reveal-up" style="--delay:0.65s">
+        <a href="#projects" class="btn btn-primary">View Evidence</a>
+        <a href="#contact" class="btn btn-ghost">Say Hi</a>
+      </div>
+      <div class="hero-warning reveal-up" style="--delay:2.2s" id="hero-warning">
+        Proceed at your own risk ↓
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT / TIMELINE -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">CHAPTER 01</div>
+      <h2 class="section-title">How It Started</h2>
+      <p class="section-sub">A timeline no one asked for, but here we are.</p>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <h3>Started graphic design.</h3>
+            <p>Discovered that making things look good is harder than it looks. Shocking revelation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.1s">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <h3>Built first website.</h3>
+            <p>It was mostly div soup and inline styles. It worked. That felt like enough.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.2s">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <h3>Learned hosting.</h3>
+            <p>Deployed something to a real server. Felt like an astronaut. Still do, a little.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.3s">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <h3>Discovered DNS.</h3>
+            <p>Propagation time: 48 hours. My patience: 47 hours and 59 minutes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.4s">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-card timeline-card-warning">
+            <div class="timeline-dot timeline-dot-warning"></div>
+            <h3>Regretted discovering DNS.</h3>
+            <p>Nobody warned me. Consider this your warning.</p>
+            <div class="timeline-badge">⚠️ Still haunts me</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.5s">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-card">
+            <div class="timeline-dot timeline-dot-accent"></div>
+            <h3>Created Palestine Profile Maker.</h3>
+            <p>Built a simple tool for generating Palestine-support profile pictures. Turns out showing solidarity is something people want to make visible.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay:0.6s">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-card timeline-card-active">
+            <div class="timeline-dot timeline-dot-live"></div>
+            <h3>Still learning.</h3>
+            <p>The stack grows. The imposter syndrome is familiar now. We coexist.</p>
+            <div class="timeline-badge timeline-badge-live">🟢 Ongoing</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUS DASHBOARD -->
+  <section class="section section-alt" id="status">
+    <div class="container">
+      <div class="section-label">LIVE STATUS</div>
+      <h2 class="section-title">Current Status</h2>
+      <p class="section-sub">Updated whenever I remember to update it.</p>
+      <div class="status-grid">
+
+        <div class="status-card reveal-up" style="--delay:0s">
+          <div class="status-card-header">
+            <div class="status-pill status-pill-blue">⚡ Building</div>
+          </div>
+          <ul class="status-list">
+            <li>
+              <span class="status-item-dot"></span>
+              <div>
+                <strong>Palestine Profile Maker</strong>
+                <span class="status-desc">Generating solidarity visuals</span>
+              </div>
+            </li>
+            <li>
+              <span class="status-item-dot"></span>
+              <div>
+                <strong>LahariMukthi</strong>
+                <span class="status-desc">Drug awareness portal</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="status-card reveal-up" style="--delay:0.15s">
+          <div class="status-card-header">
+            <div class="status-pill status-pill-purple">📚 Learning</div>
+          </div>
+          <ul class="status-list">
+            <li>
+              <span class="status-item-dot status-item-dot-purple"></span>
+              <div>
+                <strong>Performance Optimization</strong>
+                <span class="status-desc">Making fast things faster</span>
+              </div>
+            </li>
+            <li>
+              <span class="status-item-dot status-item-dot-purple"></span>
+              <div>
+                <strong>Cybersecurity</strong>
+                <span class="status-desc">It's deep. Very deep.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="status-card reveal-up" style="--delay:0.3s">
+          <div class="status-card-header">
+            <div class="status-pill status-pill-amber">🚫 Avoiding</div>
+          </div>
+          <ul class="status-list">
+            <li>
+              <span class="status-item-dot status-item-dot-amber"></span>
+              <div>
+                <strong>Starting another side project</strong>
+                <span class="status-desc">Holding firm. For now.</span>
+              </div>
+            </li>
+          </ul>
+          <p class="status-footnote">Success rate: 0%</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="section" id="principles">
+    <div class="container">
+      <div class="section-label">CHAPTER 02</div>
+      <h2 class="section-title">How I Build</h2>
+      <p class="section-sub">Three things that didn't come from a textbook.</p>
+      <div class="principles-grid">
+
+        <div class="principle-card reveal-up" style="--delay:0s">
+          <div class="principle-number">01</div>
+          <div class="principle-icon">🚀</div>
+          <h3>Speed First</h3>
+          <p>I prefer shipping a working version over planning the perfect version. Perfection is just procrastination with good posture.</p>
+        </div>
+
+        <div class="principle-card reveal-up" style="--delay:0.15s">
+          <div class="principle-number">02</div>
+          <div class="principle-icon">🔨</div>
+          <h3>Learn By Building</h3>
+          <p>Most of my skills came from projects, not tutorials. Tutorials end. Projects have production incidents.</p>
+        </div>
+
+        <div class="principle-card reveal-up" style="--delay:0.3s">
+          <div class="principle-number">03</div>
+          <div class="principle-icon">✂️</div>
+          <h3>Simplicity Wins</h3>
+          <p>If two solutions work, I usually choose the simpler one. Future me sends a thank you note every time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label">CLASSIFIED</div>
+      <h2 class="section-title">Evidence</h2>
+      <p class="section-sub">Official project reports. Mildly embellished for readability.</p>
+      <div class="projects-grid">
+
+        <!-- Project 001 -->
+        <div class="project-card reveal-up" style="--delay:0s">
+          <div class="project-card-header">
+            <div class="project-report-label">PROJECT REPORT</div>
+            <div class="project-number">#001</div>
+          </div>
+          <div class="project-status-row">
+            <span class="project-status project-status-active">● Active</span>
+          </div>
+          <h3 class="project-name">LahariMukthi</h3>
+          <div class="project-fields">
+            <div class="project-field">
+              <span class="field-label">Mission</span>
+              <span class="field-value">Drug awareness portal.</span>
+            </div>
+            <div class="project-field">
+              <span class="field-label">Outcome</span>
+              <span class="field-value">In progress.</span>
+            </div>
+            <div class="project-field project-field-highlight">
+              <span class="field-label">Unexpected Side Effect</span>
+              <span class="field-value">Every update created two new feature requests.</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+            <a href="http://laharimukthi.pages.dev" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo →</a>
+          </div>
+        </div>
+
+        <!-- Project 002 -->
+        <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="project-card-header">
+            <div class="project-report-label">PROJECT REPORT</div>
+            <div class="project-number">#002</div>
+          </div>
+          <div class="project-status-row">
+            <span class="project-status project-status-stable">● Stable</span>
+          </div>
+          <h3 class="project-name">Palestine Profile Maker</h3>
+          <div class="project-fields">
+            <div class="project-field">
+              <span class="field-label">Mission</span>
+              <span class="field-value">Generate profile images with solidarity overlays.</span>
+            </div>
+            <div class="project-field">
+              <span class="field-label">Outcome</span>
+              <span class="field-value">Used by thousands.</span>
+            </div>
+            <div class="project-field project-field-highlight">
+              <span class="field-label">Unexpected Side Effect</span>
+              <span class="field-value">Users discovered bugs I didn't know existed.</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/FalasTech/falastech-ppm" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+            <a href="#" class="btn btn-sm btn-primary">Live Demo →</a>
+          </div>
+        </div>
+
+        <!-- Project 003 -->
+        <div class="project-card reveal-up" style="--delay:0.2s">
+          <div class="project-card-header">
+            <div class="project-report-label">PROJECT REPORT</div>
+            <div class="project-number">#003</div>
+          </div>
+          <div class="project-status-row">
+            <span class="project-status project-status-archived">● Archived</span>
+          </div>
+          <h3 class="project-name">Foodverse Premium</h3>
+          <div class="project-fields">
+            <div class="project-field">
+              <span class="field-label">Mission</span>
+              <span class="field-value">Build a premium restaurant website template.</span>
+            </div>
+            <div class="project-field">
+              <span class="field-label">Outcome</span>
+              <span class="field-value">Success.</span>
+            </div>
+            <div class="project-field project-field-highlight">
+              <span class="field-label">Unexpected Side Effect</span>
+              <span class="field-value">Made me believe I would finish every project.</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/heyitzamjad/foodverse-premium" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+            <a href="http://amjad.is-a.dev/foodverse-premium" class="btn btn-sm btn-primary">Live Demo →</a>
+          </div>
+        </div>
+
+        <!-- Project 004 -->
+        <div class="project-card reveal-up" style="--delay:0.3s">
+          <div class="project-card-header">
+            <div class="project-report-label">PROJECT REPORT</div>
+            <div class="project-number">#004</div>
+          </div>
+          <div class="project-status-row">
+            <span class="project-status project-status-archived">● Archived</span>
+          </div>
+          <h3 class="project-name">FalasTech</h3>
+          <div class="project-fields">
+            <div class="project-field">
+              <span class="field-label">Mission</span>
+              <span class="field-value">Build useful public web tools.</span>
+            </div>
+            <div class="project-field">
+              <span class="field-label">Outcome</span>
+              <span class="field-value">Success, but stopped for now.</span>
+            </div>
+            <div class="project-field project-field-highlight">
+              <span class="field-label">Unexpected Side Effect</span>
+              <span class="field-value">Created even more project ideas.</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/falastech" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+            <a href="https://falastech.pages.dev" class="btn btn-sm btn-primary">Preview →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">CHAPTER 03</div>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">An honest categorization system.</p>
+      <div class="skills-grid">
+
+        <div class="skills-category reveal-up" style="--delay:0s">
+          <div class="skills-cat-header">
+            <span class="skills-cat-icon">✅</span>
+            <h3>Things I Use Often</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal-up" style="--delay:0.15s">
+          <div class="skills-cat-header">
+            <span class="skills-cat-icon">⚠️</span>
+            <h3>Things I Break Occasionally</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag-warning">Linux</span>
+            <span class="skill-tag skill-tag-warning">Servers</span>
+            <span class="skill-tag skill-tag-warning">DNS</span>
+            <span class="skill-tag skill-tag-warning">Production</span>
+          </div>
+          <p class="skills-note">All breakages are educational experiences.</p>
+        </div>
+
+        <div class="skills-category reveal-up" style="--delay:0.3s">
+          <div class="skills-cat-header">
+            <span class="skills-cat-icon">📈</span>
+            <h3>Things I'm Learning</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag-learning">Cloud</span>
+            <span class="skill-tag skill-tag-learning">Security</span>
+            <span class="skill-tag skill-tag-learning">Cloudflare</span>
+            <span class="skill-tag skill-tag-learning" id="weekly-interest">Whatever looked interesting this week</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section section-alt" id="stats">
+    <div class="container">
+      <div class="section-label">BY THE NUMBERS</div>
+      <h2 class="section-title">Stats</h2>
+      <div class="stats-grid">
+
+        <div class="stat-card reveal-up" style="--delay:0s">
+          <div class="stat-number" data-target="21">0</div>
+          <div class="stat-label">Projects Built</div>
+          <div class="stat-sub">that I remember</div>
+        </div>
+
+        <div class="stat-card reveal-up" style="--delay:0.1s">
+          <div class="stat-number stat-number-plus" data-target="200">0</div>
+          <div class="stat-label">Designs Created</div>
+          <div class="stat-sub">some are even good</div>
+        </div>
+
+        <div class="stat-card reveal-up" style="--delay:0.2s">
+          <div class="stat-number stat-number-text">∞</div>
+          <div class="stat-label">Ideas Waiting</div>
+          <div class="stat-sub">send help</div>
+        </div>
+
+        <div class="stat-card reveal-up" style="--delay:0.3s">
+          <div class="stat-number stat-number-text">∞</div>
+          <div class="stat-label">Lessons Learned</div>
+          <div class="stat-sub">mostly at 2 AM</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPER NOTES -->
+  <section class="section" id="notes">
+    <div class="container">
+      <div class="section-label">INTERNAL DOCS</div>
+      <h2 class="section-title">Developer Notes</h2>
+      <p class="section-sub">Things I wrote down so I wouldn't forget. Didn't help.</p>
+      <div class="notes-grid" id="notes-grid">
+
+        <div class="sticky-note" data-rotate="-2">
+          <div class="note-number">Note #12</div>
+          <p>Spent 4 hours fixing a bug.</p>
+          <p>The solution was one missing semicolon.</p>
+          <div class="note-footer">Filed under: humbling experiences</div>
+        </div>
+
+        <div class="sticky-note sticky-note-purple" data-rotate="1.5">
+          <div class="note-number">Note #27</div>
+          <p>The original design looked worse.</p>
+          <p>Trust me.</p>
+          <div class="note-footer">Filed under: trust issues</div>
+        </div>
+
+        <div class="sticky-note sticky-note-red" data-rotate="-1">
+          <div class="note-number">Note #31</div>
+          <p>Never edit production at 2 AM.</p>
+          <p><em>Never.</em></p>
+          <div class="note-footer">Filed under: lessons learned hard</div>
+        </div>
+
+        <div class="sticky-note" data-rotate="2">
+          <div class="note-number">Note #44</div>
+          <p>It worked on localhost.</p>
+          <p>That should count for something.</p>
+          <div class="note-footer">Filed under: optimism</div>
+        </div>
+
+        <div class="sticky-note sticky-note-purple" data-rotate="-0.5">
+          <div class="note-number">Note #58</div>
+          <p>"Just one more feature" is never just one more feature.</p>
+          <div class="note-footer">Filed under: scope creep awareness</div>
+        </div>
+
+        <div class="sticky-note sticky-note-red" data-rotate="1">
+          <div class="note-number">Note #63</div>
+          <p>The documentation said it would work.</p>
+          <p>The documentation was wrong.</p>
+          <div class="note-footer">Filed under: trust no one, not even docs</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAVEYARD -->
+  <section class="section section-alt" id="graveyard">
+    <div class="container">
+      <div class="section-label">R.I.P</div>
+      <h2 class="section-title">Project Graveyard</h2>
+      <p class="section-sub">Where good ideas go to rest. Mostly peacefully.</p>
+      <div class="graveyard-grid">
+
+        <div class="grave-card reveal-up" style="--delay:0s">
+          <div class="grave-cross">✝</div>
+          <h3 class="grave-name">AI Startup Idea</h3>
+          <div class="grave-fields">
+            <div class="grave-field">
+              <span>Cause of Death</span>
+              <span class="grave-value">Lost Interest</span>
+            </div>
+            <div class="grave-field">
+              <span>Time Alive</span>
+              <span class="grave-value">4 Days</span>
+            </div>
+          </div>
+          <p class="grave-note">It was going to change everything. It changed nothing.</p>
+        </div>
+
+        <div class="grave-card reveal-up" style="--delay:0.1s">
+          <div class="grave-cross">✝</div>
+          <h3 class="grave-name">Perfect Portfolio Redesign</h3>
+          <div class="grave-fields">
+            <div class="grave-field">
+              <span>Cause of Death</span>
+              <span class="grave-value">Started another redesign</span>
+            </div>
+            <div class="grave-field">
+              <span>Time Alive</span>
+              <span class="grave-value">2 Weeks</span>
+            </div>
+          </div>
+          <p class="grave-note">The redesign was replaced by this redesign. Cycle continues.</p>
+        </div>
+
+        <div class="grave-card reveal-up" style="--delay:0.2s">
+          <div class="grave-cross">✝</div>
+          <h3 class="grave-name">Productivity App</h3>
+          <div class="grave-fields">
+            <div class="grave-field">
+              <span>Cause of Death</span>
+              <span class="grave-value">Distracted by new project</span>
+            </div>
+            <div class="grave-field">
+              <span>Time Alive</span>
+              <span class="grave-value">11 Days</span>
+            </div>
+          </div>
+          <p class="grave-note">Ironic, yes. I am aware.</p>
+        </div>
+
+        <div class="grave-card reveal-up" style="--delay:0.3s">
+          <div class="grave-cross">✝</div>
+          <h3 class="grave-name">Social Network for Developers</h3>
+          <div class="grave-fields">
+            <div class="grave-field">
+              <span>Cause of Death</span>
+              <span class="grave-value">Realized GitHub exists</span>
+            </div>
+            <div class="grave-field">
+              <span>Time Alive</span>
+              <span class="grave-value">6 Hours</span>
+            </div>
+          </div>
+          <p class="grave-note">The fastest project death on record.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB SECTION -->
+  <section class="section" id="github">
+    <div class="container">
+      <div class="section-label">OPEN SOURCE</div>
+      <h2 class="section-title">GitHub</h2>
+      <p class="section-sub">Where code goes to be judged by the internet.</p>
+      <div class="github-dashboard" id="github-dashboard">
+        <div class="github-profile-card" id="github-profile">
+          <div class="github-loading">
+            <div class="loading-spinner"></div>
+            <span>Fetching from the cloud...</span>
+          </div>
+        </div>
+        <div class="github-repos" id="github-repos">
+          <!-- Repos injected by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container container-narrow">
+      <div class="section-label">CHAPTER LAST</div>
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="contact-sub">
+        Want to say hi?<br/>
+        <span class="muted">Worst case: we have an interesting conversation.</span><br/>
+        <span class="contact-best">Best case: we build something cool.</span>
+      </p>
+      <div class="contact-links">
+
+        <a href="mailto:info@amjad.is-a.dev" class="contact-card reveal-up" style="--delay:0s">
+          <div class="contact-card-icon">✉</div>
+          <div class="contact-card-info">
+            <strong>Email</strong>
+            <span>info@amjad.is-a.dev</span>
+          </div>
+          <div class="contact-card-arrow">→</div>
+        </a>
+
+        <a href="https://github.com/heyitzamjad" target="_blank" rel="noopener" class="contact-card reveal-up" style="--delay:0.1s">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <strong>GitHub</strong>
+            <span>@heyitzamjad</span>
+          </div>
+          <div class="contact-card-arrow">→</div>
+        </a>
+
+        <a href="https://linkedin.com/in/heyitzamjad" target="_blank" rel="noopener" class="contact-card reveal-up" style="--delay:0.2s">
+          <div class="contact-card-icon">in</div>
+          <div class="contact-card-info">
+            <strong>LinkedIn</strong>
+            <span>Connect professionally</span>
+          </div>
+          <div class="contact-card-arrow">→</div>
+        </a>
+
+        <a href="https://instagram.com/heyitzamjad" target="_blank" rel="noopener" class="contact-card reveal-up" style="--delay:0.3s">
+          <div class="contact-card-icon">◎</div>
+          <div class="contact-card-info">
+            <strong>Instagram</strong>
+            <span>@heyitzamjad</span>
+          </div>
+          <div class="contact-card-arrow">→</div>
+        </a>
+
+        <a href="https://x.com/heyitzamjad" target="_blank" rel="noopener" class="contact-card reveal-up" style="--delay:0.4s">
+          <div class="contact-card-icon">𝕏</div>
+          <div class="contact-card-info">
+            <strong>X / Twitter</strong>
+            <span>@heyitzamjad</span>
+          </div>
+          <div class="contact-card-arrow">→</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>AR<span class="logo-bracket">]</span>
+        </div>
+        <p class="footer-msg" id="footer-msg"></p>
+        <p class="footer-copy">© 2026 Amjad Rahman. All rights reserved. Probably.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ACHIEVEMENT TOASTS -->
+  <div class="achievement-toast" id="achievement-toast">
+    <div class="achievement-icon">🏆</div>
+    <div class="achievement-text">
+      <div class="achievement-title">Achievement Unlocked</div>
+      <div class="achievement-sub" id="achievement-sub"></div>
+    </div>
+  </div>
+
+  <!-- EASTER EGG OVERLAY (sudo) -->
+  <div class="sudo-overlay" id="sudo-overlay">
+    <div class="sudo-box">
+      <div class="sudo-prompt">$ sudo access portfolio</div>
+      <div class="sudo-response">Permission Denied. Nice try.</div>
+      <button class="sudo-close" id="sudo-close">[ dismiss ]</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
